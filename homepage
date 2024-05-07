@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Example</title>
+    <style>
+        .image-container {
+            max-width: 100%; /* Ensures the image container doesn't exceed the width of the viewport */
+            margin: 0 auto; /* Centers the container horizontally */
+            overflow: hidden; /* Hides any overflow from the image */
+        }
+
+        img {
+            width: 100%; /* Makes the image responsive, filling its container */
+            display: block; /* Ensures the image doesn't have any inline spacing */
+        }
+
+        @media screen and (max-width: 767px) and (min-aspect-ratio: 16/9) {
+            img {
+                width: 100%; /* Make the image fill the container only on widescreen mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH2n6DQ3oUAIfHTTS0fDVpdE3vbNxWbOY0nrQylOkVGCaynU-vvk6nILh0kBTI0GwGlZMkxKCFvDuruTLf5Nz_PGdu6qXkRJQQq73TO2kYhHB6vO3F2z-6Y1YuAhXAROHMq9QwsKaYR3uBFK2a6UZiKuug2bp98Cim6cMnqBPFfgPXTFD5LL5R3UU5tDZy/s11811/Mapa%20de%20Ptilo.jpg" alt="Ptilo Map">
+    </div>
+</body>
+</html>
